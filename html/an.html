@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/swiper.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+
+    </ul>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper-container-index">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+  </div>
+
+
+  <!-- Swiper -->
+  <div class="swiper-container-product">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+  </div>
+
+  <div class="product-list">
+    <div class="product">
+      <div class="product-img">
+        <img src="#" alt="1">
+      </div>
+      <div class="product-message">
+        <p>what</p>
+        <p>12</p>
+        <p class="price">1200</p>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-img">
+        <img src="#" alt="1">
+      </div>
+      <div class="product-message">
+        <p>what</p>
+        <p>12</p>
+        <p>1200</p>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-img">
+        <img src="#" alt="1">
+      </div>
+      <div class="product-message">
+        <p>what</p>
+        <p>12</p>
+        <p>1200</p>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-img">
+        <img src="#" alt="1">
+      </div>
+      <div class="product-message">
+        <p>what</p>
+        <p>12</p>
+        <p>1200</p>
+      </div>
+    </div>
+  </div>
+
+<style>
+
+.menu {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: #9E9E9E;
+    padding-top: 80px;
+    transform: translate(-110%, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu.active {
+    transform: translate(0, 0);
+}
+
+.menu ul {
+    padding: 10vw;
+}
+
+.menu ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+.swiper-container-index {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-container-product {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-container-product .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.product {
+    width: 50%;
+    margin-top: 15px;
+}
+
+.product:nth-child(2n-1) {
+    border-right: 1px solid #eee;
+}
+
+.product-img {
+    background: #777;
+    height: 150px;
+}
+
+.product-message {
+    background: #fff;
+    padding: 10px;
+}
+
+.product-message p {
+    margin-bottom: 0;
+}
+
+.product-message p:nth-child(1) {
+    font-size: 15px;
+}
+
+.product-message p:nth-child(2) {
+    font-size: 13px;
+    color: #777;
+}
+
+.product-message p:nth-child(3) {
+    font-size: 13px;
+    color: #777;
+    text-align: right;
+    margin-top: 40px;
+}
+</style>
+
+
+
+  <script src="../scripts/jquery.min.js"></script>
+  <script src="../scripts/swiper.js"></script>
+  <script>
+    var SwiperIndex = new Swiper('.swiper-container-index', {
+      loop: true,
+      mousewheelControl: true,
+      speed: 400,
+      initialSlide: 0,
+      autoplay: '1500'
+    });
+
+    var SwiperProduct = new Swiper('.swiper-container-product', {
+      loop: true,
+      mousewheelControl: true,
+      speed: 400,
+      initialSlide: 0,
+      autoplay: '1500'
+    });
+  </script>
+</body>
+
+</html>
