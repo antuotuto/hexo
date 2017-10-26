@@ -34,6 +34,10 @@
             padding: 0;
         }
 
+        .swiper-container {
+            width: 100%;
+        }
+
         .swiper-container-header {
             height: 39rem;
             position: relative;
@@ -131,18 +135,11 @@
         .swiper-container-four .what-my .icon {
             padding: 0 2.9rem;
         }
-
-        .index-box{
-            height:100%;
-            width:100%;
-            overflow: hidden;
-        }
     </style>
 </head>
 
 <body>
-    <div class="index-box">
-    <div class="swiper-container-header">
+    <div class="swiper-container-header swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
@@ -152,7 +149,7 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="swiper-container-one">
+    <div class="swiper-container-one swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="what-my">
@@ -162,8 +159,8 @@
             </div>
             <div class="swiper-slide">
                 <div class="what-my">
-                    <img src="http://www.sunqiongyao.com/ankeji/friends/hyl.jpg" alt="">
-                    <p>黄岳龙</p>
+                    <img src="http://www.sunqiongyao.com/ankeji/friends/liujiayang.jpg" alt="">
+                    <p>刘佳阳</p>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -186,8 +183,8 @@
             </div>
             <div class="swiper-slide">
                 <div class="what-my">
-                    <img src="http://www.sunqiongyao.com/ankeji/friends/liujiayang.jpg" alt="">
-                    <p>刘佳阳</p>
+                    <img src="http://www.sunqiongyao.com/ankeji/friends/hyl.jpg" alt="">
+                    <p>黄岳龙</p>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -201,7 +198,7 @@
 
     <div class="swiper-box">
         <h1>王安安科技理想篇</h1>
-        <div class="swiper-container-three">
+        <div class="swiper-container-three swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="what-my">
@@ -258,7 +255,7 @@
 
     <div class="swiper-box">
         <h1>健康饮食之日常篇</h1>
-        <div class="swiper-container-four">
+        <div class="swiper-container-four swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="what-my">
@@ -340,13 +337,45 @@
                         <p>一些大图</p>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="what-my">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tiantianquan"></use>
+                        </svg>
+                        <p>一些大图</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="what-my">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tiantianquan"></use>
+                        </svg>
+                        <p>一些大图</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="what-my">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tiantianquan"></use>
+                        </svg>
+                        <p>一些大图</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="what-my">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tiantianquan"></use>
+                        </svg>
+                        <p>一些大图</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="swiper-box">
         <h1>王安安感谢篇</h1>
-        <div class="swiper-container-two">
+        <div class="swiper-container-two swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="what-my">
@@ -407,7 +436,6 @@
             </div>
         </div>
     </div>
-</div>
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/swiper.js"></script>
 
@@ -427,7 +455,7 @@
 
         var swiperTwo = new Swiper('.swiper-container-two', {
             loop: false,
-            slidesPerView: 2.2,
+            slidesPerView: 3.2,
             paginationClickable: true,
             spaceBetween: 10
         });
