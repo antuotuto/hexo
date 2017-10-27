@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/swiper.css">
-    <script src="//at.alicdn.com/t/font_452786_uiu3mumw64po80k9.js"></script>
-    <script src="//at.alicdn.com/t/font_453301_tr66khnc1hiftj4i.js"></script>
+    <script src="../scripts/font/iconfont.js"></script>
     <style>
         html,
         body {
@@ -138,7 +137,17 @@
 </head>
 
 <body>
+    <div class="loading" id="loading">
+        <svg class="icon home-icon" aria-hidden="true">
+            <use xlink:href="#icon-xiyouzhi"></use>
+        </svg>
+    </div>
     <header>
+        <a href="../index.html">
+            <svg class="icon home-icon" aria-hidden="true">
+                <use xlink:href="#icon-home1"></use>
+            </svg>
+        </a>
         <img src="http://www.sunqiongyao.com/headerBg1.png" alt="">
         <div class="box">
             <h2 class="name">爸爸妈妈</h2>
@@ -213,6 +222,13 @@
             paginationClickable: true,
             spaceBetween: 0
         });
+    </script>
+    <script>
+        window.onload = function () {
+            console.log('一个有涵养的人 不需要别人的提醒 就会保持优雅 王安安 Tel: 133-7017-5513');
+            var loading = document.getElementById('loading');
+            loading.classList.add('hidden-now');
+        }
     </script>
 </body>
 

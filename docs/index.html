@@ -44,7 +44,17 @@
         }
 
         .swiper-container-header .swiper-slide {
-            background: #fff;
+            background: #95CACE;
+            padding: 8rem;
+            color:#fff;
+        }
+
+        .swiper-container-header .swiper-slide p{
+            text-align: left;
+        }
+
+        .swiper-pagination-bullet-active{
+            background: #F5474F;
         }
         /* 第一个轮播 */
 
@@ -167,12 +177,29 @@
 </head>
 
 <body>
+    <div class="loading" id="loading">
+        <svg class="icon home-icon" aria-hidden="true">
+            <use xlink:href="#icon-xiyouzhi"></use>
+        </svg>
+    </div>
     <div class="swiper-container-header swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">
+                <h1>王安安科技</h1>
+                <p>正在装修</p>
+            </div>
+            <div class="swiper-slide">
+                <h1>王安安科技</h1>
+                <p>正在装修</p>
+            </div>
+            <div class="swiper-slide">
+                <h1>王安安科技</h1>
+                <p>正在装修</p>
+            </div>
+            <div class="swiper-slide">
+                <h1>王安安科技</h1>
+                <p>正在装修</p>
+            </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -282,7 +309,7 @@
 
 
     <div class="swiper-box">
-        <h1>健康饮食之日常篇</h1>
+        <h1>扫描下方二维码可询问与王安安共进晚餐</h1>
         <div class="swiper-container-four swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -517,8 +544,13 @@
             spaceBetween: 10
         });
     </script>
-
-
+    <script>
+        window.onload = function () {
+            console.log('一个有涵养的人 不需要别人的提醒 就会保持优雅 王安安 Tel: 133-7017-5513');
+            var loading = document.getElementById('loading');
+            loading.classList.add('hidden-now');
+        }
+    </script>
 </body>
 
 </html>

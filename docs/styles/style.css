@@ -1,7 +1,47 @@
-.home-icon{
-    width:8rem;
-    height:8rem;
+header .home-icon {
+    width: 8rem;
+    height: 8rem;
     position: absolute;
-    left:2rem;
-    top:2rem;
+    left: 2rem;
+    top: 2rem;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    background: #95CACE;
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-now {
+    display: none;
+}
+
+.loading .home-icon {
+    width: 20rem;
+    height: 20rem;
+    background: #fff;
+    padding: 3rem;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(27, 55, 75, 0.08);
+    border-radius: 50%;
+}
+
+.loading::after {
+    content: "王安安疯狂加载中....";
+    position: absolute;
+    bottom: 10rem;
+    color: #fff;
+    font-size: 5rem;
+    width:100%;
+    text-align: center;
+
 }
